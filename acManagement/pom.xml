@@ -67,19 +67,20 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>com.github.ferstl</groupId>
+				<artifactId>depgraph-maven-plugin</artifactId>
+				<version>4.0.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>graph</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
-		<plugin>
-			<groupId>com.github.ferstl</groupId>
-			<artifactId>depgraph-maven-plugin</artifactId>
-			<version>4.0.1</version>
-			<executions>
-				<execution>
-					<goals>
-						<goal>graph</goal>
-					</goals>
-				</execution>
-			</executions>
-		</plugin>
+
 	</build>
 
 </project>
