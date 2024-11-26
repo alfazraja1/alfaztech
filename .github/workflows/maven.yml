@@ -42,4 +42,5 @@ jobs:
       run: mvn clean install -Pci-skip-tests
 
     - name: Generate Maven dependency graph
+      if: ${{ exists('pom.xml') }}
       run: mvn com.github.ferstl:depgraph-maven-plugin:4.0.1:graph
